@@ -23,24 +23,30 @@ console.log("it works");
 const distanceEl = document.getElementById("distance")
 const ageEl = document.getElementById("age")
 const sendEl = document.getElementById("send")
+const form = document.querySelector("form")
 // js const tracking back to html + values
 
-send.addEventListener("click", () => {
+form.addEventListener("submit", (event) => {
+    event.preventDefault()
     const distance = distanceEl.value
     const price = distance * 0.21
     const age = ageEl.value
+    
+    let finalPrice = 0
 
     if (age < 18) {
-        const underage = price - ((price * 20) / 100)
-        console.log(underage);
+        finalPrice = price - ((price * 20) / 100)
     }
     else if (age >= 65) {
-        const senior = price - ((price * 40) / 100)
-        console.log(senior);
+        finalPrice = price - ((price * 40) / 100)
     }
     else {
-        const regular = price
-        console.log(regular);
+        finalPrice = price
     }
+    console.log(finalPrice);
+    
+    const info = document.getElementById("info")
+    info.innerHTML = finalPrice
 })
 // 1st milestone with if conditions and its function
+
