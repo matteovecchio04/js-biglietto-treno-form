@@ -21,15 +21,15 @@ TOOLS:
 console.log("it works");
 
 const distanceEl = document.getElementById("distance")
-const distance = distanceEl.value
 const ageEl = document.getElementById("age")
-const age = ageEl.value
 const sendEl = document.getElementById("send")
 // js const tracking back to html + values
 
-const price = distance * 0.21
-
 send.addEventListener("click", () => {
+    const distance = distanceEl.value
+    const price = distance * 0.21
+    const age = ageEl.value
+
     if (age < 18) {
         const underage = price - ((price * 20) / 100)
         console.log(underage);
@@ -43,3 +43,4 @@ send.addEventListener("click", () => {
         console.log(regular);
     }
 })
+// 1st milestone with if conditions and its function
