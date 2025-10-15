@@ -10,7 +10,7 @@ va applicato uno sconto del 40% per gli over 65.
 
 /* 
 TOOLS:
-- prompt km
+- prompt km (actually, it's an input in html)
 - propmt age
 - function
 - const/let
