@@ -18,9 +18,28 @@ TOOLS:
 - 20% under 18
 - 40% over 65
 */
-
 console.log("it works");
 
 const distanceEl = document.getElementById("distance")
+const distance = distanceEl.value
 const ageEl = document.getElementById("age")
+const age = ageEl.value
 const sendEl = document.getElementById("send")
+// js const tracking back to html + values
+
+const price = distance * 0.21
+
+send.addEventListener("click", () => {
+    if (age < 18) {
+        const underage = price - ((price * 20) / 100)
+        console.log(underage);
+    }
+    else if (age >= 65) {
+        const senior = price - ((price * 40) / 100)
+        console.log(senior);
+    }
+    else {
+        const regular = price
+        console.log(regular);
+    }
+})
