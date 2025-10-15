@@ -4,26 +4,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- link to bootstrap -->
     <title>Biglietto Treno</title>
 </head>
 
-<body>
+<body class="bg-danger">
+    <div class="container">
+        <h1 class="text-light">
+            CALCOLA IL PREZZO DEL TUO BIGLIETTO
+        </h1>
+        <div class="card card-form p-3">
+            <form>
+                <input id="name" type="text" placeholder="Nome e Cognome" required>
+                <input id="distance" type="number" placeholder="Distanza" required>
+                <input id="age" type="number" placeholder="Età" required>
 
-    <form>
-        <input id="distance" type="number" placeholder="Distanza">
-        <input id="age" type="number" placeholder="Età">
-
-        <button id="button" type="submit">Calcola prezzo</button>
-    </form>
+                
+                <button id="button" type="submit">Calcola prezzo</button>
+            </form>
+        </div>
 
 
-    <p>I kilometri che percorrerai sono:<span id="userKm"></span></p>
-    <p>La tua età è:<span id="userAge"></span></p>
-    <p>Il prezzo da pagare per il tuo viaggio è:<span id="infoFinal"></span></p>
-    <!-- add span to prevent the removal of content inside the <p></p> -->
-
+        <p>Il tuo nome è: <span id="userName"></span></p>
+        <p>I kilometri che percorrerai sono: <span id="userKm"></span>km</p>
+        <p>La tua età è: <span id="userAge"></span></p>
+        <p>Il prezzo da pagare per il tuo viaggio è: <span id="infoFinal"></span> &euro;</p>
+        <!-- add span to prevent the removal of content inside the <p></p> -->
+    </div>
 
     <script src="./assets/javascript/script.js"></script>
+    <!-- link to js -->
 </body>
 
 </html>

@@ -23,6 +23,8 @@ console.log("it works");
 const distanceEl = document.getElementById("distance")
 const ageEl = document.getElementById("age")
 const sendEl = document.getElementById("send")
+const nameEl = document.getElementById("name")
+
 const form = document.querySelector("form")
 // js const tracking back to html + values
 
@@ -31,7 +33,8 @@ form.addEventListener("submit", (event) => {
     const distance = distanceEl.value
     const price = distance * 0.21
     const age = ageEl.value
-    
+    const nameImput = nameEl.value
+
     let finalPrice = 0
 
     if (age < 18) {
@@ -45,7 +48,7 @@ form.addEventListener("submit", (event) => {
     }
     console.log(finalPrice);
     // 1st milestone with if conditions and its function
-    const final = document.getElementById("infoFinal")
+    const final = document.getElementById("infoFinal") 
     final.innerHTML = finalPrice.toFixed(2)
     // add 2 digit number after the period
     const userKm = document.getElementById("userKm")
@@ -55,6 +58,10 @@ form.addEventListener("submit", (event) => {
     userAge.innerHTML = age
     // These print the user inserted values + the final result on the website page (inside the <p></p>)
     // 2nd Milestone with print on HTML complete
+
+    const userName = document.getElementById("userName")
+    userName.innerHTML = nameImput
+    
 })
 
 
