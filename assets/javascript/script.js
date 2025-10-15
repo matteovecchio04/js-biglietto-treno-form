@@ -21,4 +21,6 @@ TOOLS:
 
 console.log("it works");
 
-
+const distanceEl = document.getElementById("distance")
+const ageEl = document.getElementById("age")
+const sendEl = document.getElementById("send")
