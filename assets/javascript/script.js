@@ -8,4 +8,17 @@ va applicato uno sconto del 20% per i minorenni
 va applicato uno sconto del 40% per gli over 65.
 */
 
+/* 
+TOOLS:
+- prompt km
+- propmt age
+- function
+- const/let
+- standard price 0.21euro/km
+- 20% under 18
+- 40% over 65
+*/
+
 console.log("it works");
+
+
