@@ -46,8 +46,8 @@ form.addEventListener("submit", (event) => {
     console.log(finalPrice);
     // 1st milestone with if conditions and its function
     const final = document.getElementById("infoFinal")
-    final.innerHTML = finalPrice
-
+    final.innerHTML = finalPrice.toFixed(2)
+    // add 2 digit number after the period
     const userKm = document.getElementById("userKm")
     userKm.innerHTML = distance
 
