@@ -44,9 +44,17 @@ form.addEventListener("submit", (event) => {
         finalPrice = price
     }
     console.log(finalPrice);
-    
-    const info = document.getElementById("info")
-    info.innerHTML = finalPrice
+    // 1st milestone with if conditions and its function
+    const final = document.getElementById("infoFinal")
+    final.innerHTML = finalPrice
+
+    const userKm = document.getElementById("userKm")
+    userKm.innerHTML = distance
+
+    const userAge = document.getElementById("userAge")
+    userAge.innerHTML = age
+    // These print the user inserted values + the final result on the website page (inside the <p></p>)
+    // 2nd Milestone with print on HTML complete
 })
-// 1st milestone with if conditions and its function
+
 
